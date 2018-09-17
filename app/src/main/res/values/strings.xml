@@ -1,0 +1,232 @@
+<resources>
+    <string name="app_name">SmartSellingAgent</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">فون نمبر</string>
+    <string name="prompt_password">پاس ورڈ</string>
+    <string name="action_sign_in">اکاؤنٹ بنائیں یا رجسٹر ھوں</string>
+    <string name="action_sign_in_short">لوگ ان</string>
+    <string name="forget_password">پاس ورڈ بھول گیا</string>
+    <string name="error_invalid_phone">فون نمبر درست نھیں</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">پاس ورڈ ٹھیک نھیں</string>
+    <string name="error_field_required">اس میں لکھنا ضروری ھے</string>
+    <string name="farmer">کسان</string>
+    <string name="trader">آڑتی</string>
+    <string name="broker">بروکر</string>
+    <string name="fertilizer">کھاد فروش</string>
+    <string name="go">اکاؤنٹ بنائیں</string>
+    <string name="move_forward">آگے جائیں</string>
+    <string name="signin">sign in</string>
+    <string name="cancel">Cancel</string>
+    <string name="fragment">this is fragment</string>
+    <string name="signUpTitle">نیچۓ والے اختیارات ‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏‏میں سے کو‏‏ئ ایک چنیں</string>
+    <string name="atleastOne">کم سے کم ایک اختیار چنیں</string>
+    <string name="label">کسان کاروبار </string>
+    <string name="welcome">خوش آمدید</string>
+    <!--Farmer profile-->
+    <string name="name">نام</string>
+    <string name="phone_number">فون نمبر</string>
+    <string name="IdCard"> شناختی کارڈ</string>
+    <string name="product">پیداوار کا نام</string>
+    <string name="type_of_product">پیداوار کی قسم</string>
+    <string name="Distt">ضلع</string>
+    <string name="Tehsil">تحصیل</string>
+    <string name="Pass">پاس ورڈ لکھیں</string>
+    <string name="Again_Pass">دوبارہ پاس ورڈ لکھیں</string>
+    <string name="Prince_per_Sack">ایک بوری کی قیمت</string>
+    <string name="Area">رقبہ</string>
+    <string name="Harvesting_time">فصل کاٹنے کا وقت</string>
+    <string name="Source_of_water">ذراۓ آبپاشی</string>
+    <string name="google_map">نقشہ بتائیں</string>
+    <string name="attach_proof">زمین کا ثبوت دیں</string>
+    <string name="attach_images">پیداوار کی تصاویر ڈالیں</string>
+    <string name="cityOrVill">شہر یا گاوں کا نام</string>
+    <string name="quantity">پیداوار کی مقدار</string>
+    <string name="profile_pic">اپنی تصویر ڈالیں</string>
+    <string name="product_info">پیداوار کی معلومات دینے کے لیے جمع کا بٹن دبائیں</string>
+    <string name="from_gallery">گیلری سے</string>
+    <string name="from_camera">کیمرہ سے</string>
+    <string name="price_per_area">رقبہ کی قیمت</string>
+    <string name="plan_per_akr">ایک ایکڑ پر پودوں کی تعداد</string>
+    <string name="ripe_time">زمین تیار ہونے کا وقت</string>
+    <string name="fruitORvege">فروٹ یا سبزی</string>
+    <string name="crops">فصلیں</string>
+    <string name="PassValidation">ایک جیسے پاس ورڈ لکھیں</string>
+    <string name="WriteName">نام لکھنا ضروری ھے</string>
+    <string name="WritePass">پاس ورٖڈ لکھنا لازمی ھے</string>
+    <string name="InValidPhone">فون نمبر درست لکھیں</string>
+    <string name="NoPhone">فون نمبر لکھنا ضروری ھے</string>
+    <string name="incomplete">نامکمل معلومات</string>
+    <string name="imageSelected">تصیور چن لی گئ</string>
+    <string name="imagesSelected">تصاویر چن لی گئیں</string>
+    <string name="InValidCode">کوڈ صحیح دیں</string>
+    <string name="verify">تصدیق کریں</string>
+    <string name="showdetail">تفصیل دیکھیں</string>
+    <string name="WriteNtn"> قومی ٹیکس نمبر لکھنا لازمی ھے</string>
+    <string name="title">عنوان</string>
+    <string name="friendRequestTitle">دوستی کی درخواست بھیجیں</string>
+    <string name="sendRequest">بھیج دیں</string>
+    <string name="cancelRequest">منسوخ کر دیں</string>
+    <string name="succesfulSent">کامیابی سے آپ کی دوستی کی درخوامت بھیج وی گی</string>
+    <string name="cancelled">آپ کی درخواست منسوخ ہو گئ</string>
+    <string name="namAndNtn">نام اور  قومی ٹیکس نمبر لکھنا لازمی ھے</string>
+    <string name="add_crop">فصل کی معلومات دیں</string>
+    <string name="add_fruit">پھل کی پیداوار</string>
+    <!--<string name="WritePass"></string>-->
+    <!--Fertilizer-->
+
+
+    <!--trader-->
+    <string name="ntn">(NTN)قومی ٹیکس نمبر</string>
+    <string name="loan">کیا آپ قرضہ دے سکتے ہیں</string>
+    <string name="yes">جی ہاں</string>
+    <string name="no">نہیں</string>
+    <!--<string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--testing purposes-->
+    <string name="test_name">علی عابد</string>
+    <string name="test_phone">0307404703</string>
+    <string name="test_pass">123456</string>
+    <string name="test_again_pass">123456</string>
+    <string name="map_info">اپنی زمین کی نقشے کے ذریعے نشاندہی کریں</string>
+    <!--checks-->
+    <string name="required"><![CDATA[<b><font-family> <font color="#FF0000">ساری فیلڈز کو بھرنالازمی ھے</font></font-family></b>]]></string>
+    <string name="required_field">ساری فیلڈز میں لکھنا لازمی ھے</string>
+    <!--<string name="Pasعلی عابد</font></font-family></b>]]></string>-->
+    <string name="text"><![CDATA[<b><font-family> <font color="#FF0000">hello world</font></font-family></b>]]></string>
+    <string name="title_activity_maps">Map</string>
+    <!--login -->
+    <string name="code">کوڈ لکھیں</string>
+    <!--navigation drawer values-->
+    <string name="search">        صارف کو تلاش کریں</string>
+    <string name="inbox">پیٖغامات/گپ شپ</string>
+    <string name="notification">نوٹیفکیشن(اطلاع نامہ)</string>
+    <string name="LogOut">لاگ اوٹ</string>
+    <string name="bookmarks">بک مارکز(نشانیاں)</string>
+    <string name="setting">سیٹنگز(ترتیب دیں)</string>
+    <string name="profile">پروفاٰئل</string>
+    <string name="cash">رقم کا معائدہ</string>
+
+    <!--after farmer login-->
+    <string name="productName">پیداوار کا نام</string>
+    <string name="cityName">شہر یا گاوں کا نام</string>
+    <string name="ProductQuant">پیداوار کی مقدار</string>
+    <string name="ProductPrice">ایک بوری کی قیمت</string>
+    <string name="title_activity_farmer_logged__in">Farmer_logged_In</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="save">محفوظ کریں</string>
+    <string name="saved">محفوظ ہو گیا</string>
+    <!--testing strings-->
+    <string name="reviews">تبصرے</string>
+    <string name="reviewNum">نمبر</string>
+    <string name="profilePic">پروفائل پک</string>
+    <string name="delete">کیا آپ کو یقین ہے آپ اسے حزف کرنا چاہتے ہیں</string>
+    <string name="Resend">کوڈ دوبارہ بھیجیں</string>
+    <string name="uplaodImage">تصویر ڈالیں</string>
+    <string name="sendText">پیغام بھیجیں</string>
+    <string name="canLoan">قرضہ</string>
+    <string name="editcomment">تبدیل کریں</string>
+    <string name="deletecomment">حذف کریں</string>
+    <string name="commentPlease">براہ مہر بانی تبصرہ کریں</string>
+    <string name="post">پوسٹ</string>
+    <string name="delete_account">اکاؤنٹ حذف کریں</string>
+    <string name="save_place">جگہ محفوظ کریں</string>
+    <string name="search_place">جگہ تلاش کریں</string>
+    <string name="change_type">سیٹلائٹ</string>
+    <string name="userList">صارفین کی فہرست</string>
+    <string name="savingProfile">پروفائل محفوظ ہو رہی ھے</string>
+    <string name="data_saving">معلومات محفوظ ہو رہی ھے</string>
+    <string name="select_pic">تصویر کو منتخب کریں</string>
+    <string name="imagePath">تصویر کی URI</string>
+    <string name="already_comment">پہلے سے تبصرہ کر چکے ہیں</string>
+    <string name="fruit_ripe">پھل کے پکنے کا وقت</string>
+    <string name="not_given">معلومات نہیں دی گی</string>
+    <string name="regiterself">براہ مہر بانی نیااکاؤنٹ بنائیں</string>
+    <string name="change_profile">پروفائل تبدیل کریں</string>
+    <string name="notfound">جگہ نہیں ملی</string>
+    <string name="Requests">بھیجی گی/وصول کندہ التجائیں</string>
+    <string name="friendsdate">دوست بننے کی تاریخ</string>
+    <string name="friendRequest">دوستی کی التجاٰ</string>
+    <string name="accepted">آپ کی درخواست قبول ہو گئ</string>
+    <string name="comment">تبصرے</string>
+    <string name="farmerProfile">اپنی پروفائل</string>
+    <string name="friends">دوست</string>
+    <string name="mapIs">نقشہ</string>
+    <string name="medic_name">ادویات کی معلومات ڈالیں</string>
+    <string name="medic_regis">رجسٹریشن نمبر</string>
+    <string name="pest_name">حملہ آور کیڑے یا بیماری کا نام</string>
+    <string name="usage">شرح استعمال فی ایکڑ</string>
+    <string name="use_meth">طریقہء استعمال</string>
+    <string name="comp_name">کھاد یا سپرے بناننے والی کمپنی</string>
+    <string name="quantityIs">سپرے یا کھاد کتنی مقدار میں پڑی ھے </string>
+    <string name="medic_nameIs">سپرے یا کھاد کا نام</string>
+    <string name="medic_pic">سپرے یا کھاد کی تصاویر ڈالیں</string>
+    <string name="medic_shop">اپنی دوکان کی نشاندہی کریں</string>
+    <!--Arrays-->
+    <string-array name="rattingBar">
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>3.5</item>
+        <item>4</item>
+        <item>4.5</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="productPrice">
+        <item>1000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>2700</item>
+        <item>1400</item>
+        <item>1500</item>
+        <item>1000</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="productquantity">
+        <item>450</item>
+        <item>750</item>
+        <item>1500</item>
+        <item>300</item>
+        <item>200</item>
+        <item>1100</item>
+        <item>1300</item>
+        <item>1700</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="productName">
+        <item>name1</item>
+        <item>name2</item>
+        <item>name3</item>
+        <item>name4</item>
+        <item>name5</item>
+        <item>name6</item>
+        <item>name7</item>
+        <item>name8</item>
+        <item>name9</item>
+    </string-array>
+    <string-array name="productCity">
+        <item>Mianwali</item>
+        <item>Mianwali</item>
+        <item>Mianwali</item>
+        <item>Mianwali</item>
+        <item>Mianwali</item>
+        <item>Mianwali</item>
+        <item>Mianwali</item>
+        <item>Mianwali</item>
+        <item>Mianwali</item>
+    </string-array>
+    <string name="title_activity_trader_logged_in">TraderLoggedIn</string>
+    <string name="title_activity_broker_logged_in">BrokerLoggedIn</string>
+    <string name="title_activity_fertilizer_logged_in">FertilizerLoggedIn</string>
+</resources>

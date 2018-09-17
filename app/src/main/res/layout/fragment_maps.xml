@@ -1,0 +1,108 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.example.root.formarsupport.MapsFragment"
+    android:orientation="vertical">
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:fontFamily="@font/urdu"
+        android:layout_alignParentBottom="true"/>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.root.formarsupport.MapsFragment"
+        />
+
+    <LinearLayout
+        android:id="@+id/textfield"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:weightSum="8">
+
+        <EditText
+            android:id="@+id/insert_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="search the place"
+            android:fontFamily="@font/urdu"
+            android:layout_weight="7"/>
+        <Button
+            android:id="@+id/search_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="search"
+            android:fontFamily="@font/urdu"
+            android:layout_weight="0.5"/>
+        <Button
+            android:id="@+id/map_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="satelite View"
+            android:fontFamily="@font/urdu"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
+<!--
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context="com.example.root.formarsupport.MapsFragment"
+    android:orientation="vertical">
+    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;
+
+<LinearLayout
+    android:id="@+id/textfield"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentTop="true">
+
+    <EditText
+        android:id="@+id/insert_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Search Your location" />
+    <Button
+        android:id="@+id/search_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search" />
+    <Button
+        android:id="@+id/map_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="type" />
+</LinearLayout>
+<Button
+    android:id="@+id/save"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SaveLocation"
+    android:layout_alignParentBottom="true"/>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textfield"
+        android:layout_above="@id/save"
+        tools:context="com.example.root.formarsupport.MapsFragment" />
+</RelativeLayout>-->

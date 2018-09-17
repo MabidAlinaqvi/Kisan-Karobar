@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_style">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/personImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/test"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="23dp" />
+
+
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/personImage"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/urdu"
+        android:layout_toLeftOf="@+id/personImage"
+        android:layout_toStartOf="@+id/personImage"
+        android:text="@string/productName"
+       />
+
+    <TextView
+        android:id="@+id/Usercity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:fontFamily="@font/urdu"
+        android:layout_alignLeft="@+id/productName"
+        android:layout_alignStart="@+id/productName"
+        android:layout_alignBottom="@id/personImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/cityName" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:rating="5"
+        android:layout_below="@id/personImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+         />
+
+    <TextView
+        android:id="@+id/ProductQuant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/productName"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/ProductQuant"
+        android:textSize="15dp"
+        android:fontFamily="@font/urdu"/>
+
+    <TextView
+        android:id="@+id/priceOfSack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ProductQuant"
+        android:layout_alignStart="@+id/ProductQuant"
+        android:layout_alignTop="@+id/Usercity"
+        android:text="@string/ProductPrice"
+        android:layout_alignBottom="@id/personImage"
+        android:fontFamily="@font/urdu"/>
+
+
+</RelativeLayout>
+
+
+<!--
+https://stackoverflow.com/questions/6153587/how-can-i-decrease-the-size-of-ratingbar-->

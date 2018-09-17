@@ -1,0 +1,409 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.formarsupport.Click_to_visit_fertilizerProfile"
+    android:background="@drawable/background_style">
+
+    <!-- TODO: Update blank fragment layout -->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/fertilizer_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.AppBarLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appbar">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- TODO: Update blank fragment layout -->
+                <ImageView
+                    android:id="@+id/fertibookmark"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/bookmarkis" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@id/fertibookmark"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/save"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/fertimessage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/chaticon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/fertimessage"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/sendText"
+                    android:textSize="20sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/fertiProfileIs"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/profile1" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPageris"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/fertiProfileIs"/>
+
+                <RatingBar
+                    android:id="@+id/farmerrateit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/viewPageris"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7" />
+
+                <TextView
+                    android:id="@+id/farmercomment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewPageris"
+                    android:layout_marginTop="15dp"
+                    android:layout_toLeftOf="@id/fertiProfileIs"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/reviews"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmercommentNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewPageris"
+                    android:layout_marginTop="15dp"
+                    android:layout_toLeftOf="@id/farmercomment"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/reviewNum"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/farmerpersonname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmerrateit"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/name"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/farmerpersonname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmerrateit"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/name"
+                    android:textSize="25dp" />
+                <TextView
+                    android:id="@+id/farmername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmerpersonname"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/urdu"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/productName"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/farmername2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmerpersonname"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/urdu"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/productName"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmername"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/medic_regis"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/registration2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmername"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/medic_regis"
+                    android:textSize="20dp" />
+<!--
+                <TextView
+                    android:id="@+id/registration1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/registration"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/type_of_product"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/registration"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/type_of_product"
+                    android:textSize="20dp" />-->
+
+                <TextView
+                    android:id="@+id/farmercity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/registration"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/cityOrVill"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmercity2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/registration"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/cityOrVill"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmerDistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmercity"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/Distt"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmerDistrict2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmercity"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/Distt"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmerThsil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmerDistrict"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/Tehsil"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmerThsil2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmerDistrict"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/Tehsil"
+                    android:textSize="20dp" />
+                    <RelativeLayout
+                        android:id="@+id/farmercrop_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/farmerThsil">
+
+                        <TextView
+                            android:id="@+id/Pest_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/urdu"
+                            android:text="@string/pest_name"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/Pest_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/urdu"
+                            android:text="@string/pest_name"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/medic_quant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/Pest_name"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/urdu"
+                            android:text="@string/quantityIs"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/medic_quant2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/Pest_name"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/urdu"
+                            android:text="@string/quantityIs"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:id="@+id/Medic_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/medic_quant"
+                            android:fontFamily="@font/urdu"
+                            android:text="@string/medic_nameIs"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/Medic_name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/medic_quant"
+                            android:fontFamily="@font/urdu"
+                            android:text="@string/medic_nameIs"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:id="@+id/useRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/Medic_name"
+                            android:fontFamily="@font/urdu"
+                            android:text="@string/usage"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/useRate2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/Medic_name"
+                            android:fontFamily="@font/urdu"
+                            android:text="@string/usage"
+                            android:textSize="20dp"/>
+
+                        <TextView
+                            android:id="@+id/User_meth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/useRate"
+                            android:fontFamily="@font/urdu"
+                            android:text="@string/use_meth"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/User_meth2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_below="@id/useRate"
+                            android:fontFamily="@font/urdu"
+                            android:text="@string/use_meth"
+                            android:textSize="20dp"/>
+
+                    </RelativeLayout>
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/farmercrop_layout"
+                    tools:context="com.example.root.formarsupport.Click_to_visit_traderProfile"/>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>

@@ -1,0 +1,398 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.formarsupport.Click_to_visit_traderProfile"
+    android:background="@drawable/background_style">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/trader_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/appbar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- TODO: Update blank fragment layout -->
+        <ImageView
+            android:id="@+id/bookmark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bookmarkis" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/bookmark"
+            android:fontFamily="@font/urdu"
+            android:text="@string/save"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/tradermessage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/chaticon2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/tradermessage"
+            android:fontFamily="@font/urdu"
+            android:text="@string/sendText"
+            android:textSize="20sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ProfileIs"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/profile1" />
+
+        <RatingBar
+            android:id="@+id/rateit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ProfileIs"
+            android:scaleX="0.7"
+            android:scaleY="0.7" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ProfileIs"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/ProfileIs"
+            android:fontFamily="@font/urdu"
+            android:text="@string/reviews"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/commentNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ProfileIs"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/comment"
+            android:fontFamily="@font/urdu"
+            android:text="@string/reviewNum"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/personname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/rateit"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/name"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/personname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/rateit"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/name"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/personname"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/urdu"
+            android:layout_marginTop="20dp"
+            android:text="@string/productName"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/personname"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/urdu"
+            android:layout_marginTop="20dp"
+            android:text="@string/productName"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/ntn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/name"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/ntn"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ntn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/ntn"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ntn"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/cityOrVill"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/city2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/ntn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/cityOrVill"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/District"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/city"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/Distt"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/District2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/city"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/Distt"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Thsil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/District"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/Tehsil"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/Thsil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/District"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/Tehsil"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/loan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/Thsil"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/canLoan"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/loan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/Thsil"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/urdu"
+            android:text="@string/canLoan"
+            android:textSize="20dp" />
+<RelativeLayout
+    android:id="@+id/detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/loan">
+        <RelativeLayout
+            android:id="@+id/fruit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/area_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urdu"
+                android:text="@string/price_per_area"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/area_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urdu"
+                android:text="@string/price_per_area"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/product_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/area_price"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urdu"
+                android:text="@string/type_of_product"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/product_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/area_price"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urdu"
+                android:text="@string/type_of_product"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/crop_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/sack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urdu"
+                android:text="@string/Prince_per_Sack"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/sack2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urdu"
+                android:text="@string/Prince_per_Sack"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/sack"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urdu"
+                android:text="@string/ProductQuant"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/quantity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/sack"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/urdu"
+                android:text="@string/ProductQuant"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/detail_layout"
+            tools:context="com.example.root.formarsupport.Click_to_visit_traderProfile"/>
+      <!--  <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crop_layout"
+            android:text="@string/mapError"
+            android:fontFamily="@font/urdu"
+            android:textSize="25dp"/>-->
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.formarsupport.trader_add_fruit_after_login"
+    android:background="@drawable/background_style">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/trader_fruit_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- TODO: Update blank fragment layout -->
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/product_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp">
+        <EditText
+            android:id="@+id/product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/urdu"
+            android:hint="@string/product"
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/product_type_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/product_frame"
+        android:layout_alignStart="@id/product_frame"
+        android:layout_below="@id/product_frame">
+        <EditText
+            android:id="@+id/product_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:fontFamily="@font/urdu"
+            android:hint="@string/type_of_product"
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/city_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/product_type_frame"
+        android:layout_alignStart="@+id/product_type_frame"
+        android:layout_below="@+id/product_type_frame">
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:fontFamily="@font/urdu"
+            android:hint="@string/cityOrVill"
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Thsil_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/city_frame"
+        android:layout_alignRight="@+id/city_frame"
+        android:layout_below="@+id/city_frame">
+        <EditText
+            android:id="@+id/Thsil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:fontFamily="@font/urdu"
+            android:hint="@string/Tehsil"
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/District_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Thsil_frame"
+        android:layout_alignStart="@+id/Thsil_frame"
+        android:layout_below="@+id/Thsil_frame">
+        <EditText
+            android:id="@+id/District"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:fontFamily="@font/urdu"
+            android:hint="@string/Distt"
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/area_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/District_frame"
+        android:layout_alignStart="@+id/District_frame"
+        android:layout_below="@+id/District_frame">
+        <EditText
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:fontFamily="@font/urdu"
+            android:hint="@string/price_per_area"
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/quantity_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/area_frame"
+        android:layout_alignStart="@+id/area_frame"
+        android:layout_below="@+id/area_frame">
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:fontFamily="@font/urdu"
+            android:hint="@string/plan_per_akr"
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/harvast_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quantity_frame"
+        android:layout_alignStart="@+id/quantity_frame"
+        android:layout_below="@+id/quantity_frame">
+        <EditText
+            android:id="@+id/harvast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:fontFamily="@font/urdu"
+            android:hint="@string/ripe_time"
+            android:inputType="textPersonName"
+            android:textStyle="bold"/>
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/map_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/harvast_frame"
+        android:layout_alignParentRight="true"
+        android:text="@string/map_info"
+        android:fontFamily="@font/urdu"
+        android:textSize="20dp"/>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/map_detail"
+        tools:context="com.example.root.formarsupport.trader_add_fruit_after_login"/>
+    <Button
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/map"
+        android:layout_alignStart="@id/map"
+        android:layout_below="@id/map"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/button_style"
+        android:fontFamily="@font/urdu"
+        android:text="@string/go"
+        android:textSize="20dp" />
+</RelativeLayout>
+    </ScrollView>
+
+    </RelativeLayout>

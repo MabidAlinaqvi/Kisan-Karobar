@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ux="http://schemas.android.com/tools">
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily" ux:targetApi="jelly_bean">@font/urdu</item>
+
+    </style>
+</resources>

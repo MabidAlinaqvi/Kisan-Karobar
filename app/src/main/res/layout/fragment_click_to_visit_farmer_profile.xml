@@ -1,0 +1,446 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.formarsupport.Click_to_visit_farmerProfile"
+    android:background="@drawable/background_style">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/farmer_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appbar">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!-- TODO: Update blank fragment layout -->
+                <ImageView
+                    android:id="@+id/farmerbookmark"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/bookmarkis" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@id/farmerbookmark"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/save"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/farmermessage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/chaticon2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/farmermessage"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/sendText"
+                    android:textSize="20sp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/farmerProfileIs"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/profile1" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPageris"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/farmerProfileIs"/>
+
+                <RatingBar
+                    android:id="@+id/farmerrateit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/viewPageris"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7" />
+
+                <TextView
+                    android:id="@+id/farmercomment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewPageris"
+                    android:layout_marginTop="15dp"
+                    android:layout_toLeftOf="@id/farmerProfileIs"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/reviews"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmercommentNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewPageris"
+                    android:layout_marginTop="15dp"
+                    android:layout_toLeftOf="@id/farmercomment"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/reviewNum"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/farmerpersonname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmerrateit"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/name"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/farmerpersonname2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmerrateit"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/name"
+                    android:textSize="25dp" />
+                <TextView
+                    android:id="@+id/farmername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmerpersonname"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/urdu"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/productName"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/farmername2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmerpersonname"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/urdu"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/productName"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/farmerproduct_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmername"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/type_of_product"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmerproduct_type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmername"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/type_of_product"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmercity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmerproduct_type"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/cityOrVill"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmercity2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmerproduct_type"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/cityOrVill"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmerDistrict"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmercity"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/Distt"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmerDistrict2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmercity"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/Distt"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmerThsil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/farmerDistrict"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/Tehsil"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/farmerThsil2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/farmerDistrict"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/urdu"
+                    android:text="@string/Tehsil"
+                    android:textSize="20dp" />
+<RelativeLayout
+    android:id="@+id/detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/farmerThsil"
+    android:visibility="gone">
+                <RelativeLayout
+                    android:id="@+id/farmerfruit_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/farmerarea_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/price_per_area"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/farmerarea_price2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/price_per_area"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/farmerPlants"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/farmerarea_price"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/plan_per_akr"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/farmerPlants2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/farmerarea_price"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/plan_per_akr"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/farmerfruitharvest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/farmerPlants"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/fruit_ripe"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/farmerfruitharvest2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/farmerPlants"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/fruit_ripe"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/farmercrop_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/farmersack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/Prince_per_Sack"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/farmersack2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/Prince_per_Sack"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/farmerquantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/farmersack"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/ProductQuant"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/farmerquantity2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/farmersack"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/ProductQuant"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/farmerarea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/farmerquantity"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/Area"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/farmerarea2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/farmerquantity"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/Area"
+                        android:textSize="20dp" />
+                    <TextView
+                        android:id="@+id/farmerharvest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/farmerarea"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/Harvesting_time"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/farmerharvest2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/farmerarea"
+                        android:fontFamily="@font/urdu"
+                        android:text="@string/Harvesting_time"
+                        android:textSize="20dp"/>
+
+                </RelativeLayout>
+</RelativeLayout>
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/detail_layout"
+                    tools:context="com.example.root.formarsupport.Click_to_visit_traderProfile"/>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>

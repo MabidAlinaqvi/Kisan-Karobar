@@ -1,0 +1,9 @@
+<resources xmlns:ux="http://schemas.android.com/tools">
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:fontFamily" ux:targetApi="jelly_bean">@font/urdu</item>
+    </style>
+</resources>
